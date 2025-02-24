@@ -9,7 +9,7 @@ def load_and_preprocess_data(file_path):
     df = pd.read_csv(file_path)
 
     # Separate features and target
-    X = df.drop(columns=["target"])  # Replace "target" with actual column name
+    X = df.drop(columns=["target"])  
     y = df["target"]
 
     # Feature scaling
